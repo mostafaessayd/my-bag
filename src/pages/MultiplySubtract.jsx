@@ -1,21 +1,23 @@
 import { useState } from "react";
-import add from "../../programs/add/function.js";
 
-function Project() {
+function MultiplySubtract() {
   const [number1, setNumber1] = useState("");
   const [number2, setNumber2] = useState("");
   const [result, setResult] = useState(null);
 
-  function addNumbers() {
+  function calculate() {
     const a = Number(number1);
     const b = Number(number2);
 
-    setResult(add(a , b));
+    setResult({
+      multiplication: a * b,
+      subtraction: a - b,
+    });
   }
 
   return (
     <main className="project-page">
-      <h1>Add Two Numbers</h1>
+      <h1>Multiply & Subtract Two Numbers</h1>
 
       <div className="input-container">
         <input
@@ -32,18 +34,19 @@ function Project() {
           placeholder="Second number"
         />
 
-        <button onClick={addNumbers}>
-          Add
+        <button onClick={calculate}>
+          Calculate
         </button>
       </div>
 
       {result !== null && (
         <div className="result">
-          Result: {result}
+          <p>Multiplication: {result.multiplication}</p>
+          <p>Subtraction: {result.subtraction}</p>
         </div>
       )}
     </main>
   );
 }
 
-export default Project;
+export default MultiplySubtract;

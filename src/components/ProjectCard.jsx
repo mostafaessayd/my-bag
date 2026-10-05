@@ -1,15 +1,13 @@
 import { Link } from "react-router-dom";
 
-function ProjectCard() {
+function ProjectCard({ title, description, link }) {
   return (
     <div className="project-card">
-      <h2>Add Two Numbers</h2>
+      <h2>{title}</h2>
 
-      <p>
-        A simple project that adds two numbers.
-      </p>
+      <p>{description}</p>
 
-      <Link to="/project/add">
+      <Link to={link}>
         Open Project
       </Link>
     </div>
