@@ -19,6 +19,12 @@ function Home() {
           link="/project/multiply-subtract"
         />
 
+        <ProjectCard
+          title="Word Search"
+          description="A simple project that multiplies and subtracts two numbers."
+          link="/project/wordSearch"
+        />
+
       </div>
     </main>
   );

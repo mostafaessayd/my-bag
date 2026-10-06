@@ -20,13 +20,14 @@ h1 {
 }
 
 .projects {
-  display: flex;
+  /* display: flex; */
   gap: 20px;
 }
 
 .project-card {
   width: 300px;
   padding: 25px;
+  margin: 10px;
   border: 1px solid #333;
   border-radius: 12px;
   background: #181818;
