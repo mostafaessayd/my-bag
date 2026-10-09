@@ -1,0 +1,133 @@
+/* .one-module-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+
+.button-of-one-module {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    background-color: gold;
+}
+
+.module-icon-container {
+    height: 100%;
+    width: 20%;
+    background-color: green;
+}
+
+.module-name-container {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(126, 0, 128);
+} */
+
+
+.one-module-container {
+justify-content: center;
+align-items: center;
+display: flex;
+height: 10%;
+width: 100%;
+}
+
+.button-of-one-module {
+justify-content: center;
+align-items: center;
+display: flex;
+text-align: center;
+height: 90%;
+width: 90%;
+
+background: linear-gradient(
+    135deg,
+    #171c29 0%,
+    #111622 100%
+);
+
+border: 1px solid #252c3b;
+border-radius: 12px;
+overflow: hidden;
+
+color: #cbd5e1;
+font-size: 14px;
+font-weight: 500;
+letter-spacing: 0.2px;
+
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.button-of-one-module:hover {
+background: linear-gradient(
+135deg,
+#202a3c 0%,
+#192235 100%
+);
+
+border-color: #3b82f6;
+color: #f1f5f9;
+
+box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.2),
+    inset 3px 0 0 #60a5fa;
+
+transform: translateX(2px);
+}
+
+.module-icon-container {
+height: 100%;
+width: 20%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: rgba(96, 165, 250, 0.07);
+border-right: 1px solid #252c3b;
+
+color: #60a5fa;
+
+transition:
+    background 0.25s ease,
+    color 0.25s ease;
+
+}
+
+.button-of-one-module:hover .module-icon-container {
+background: rgba(96, 165, 250, 0.13);
+color: #93c5fd;
+}
+
+.module-name-container {
+height: 100%;
+width: 80%;
+
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+box-sizing: border-box;
+padding: 0 12px;
+
+background: transparent;
+color: inherit;
+
+font-size: 14px;
+font-weight: 500;
+
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}

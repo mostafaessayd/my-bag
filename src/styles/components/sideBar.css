@@ -1,4 +1,4 @@
-.logo-container {
+/* .logo-container {
     height: 10%;
     width: 100%;
     background-color: brown;
@@ -8,4 +8,79 @@
     height: 90%;
     width: 100%;
     background-color: rgb(165, 140, 42);
+} */
+
+
+
+.logo-container {
+    height: 10%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        180deg,
+        #151b29 0%,
+        #111622 100%
+    );
+
+    border-bottom: 1px solid #283144;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.logo-container::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(96, 165, 250, 0.55),
+        transparent
+    );
+}
+
+.modules-container {
+    height: 90%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #111622;
+
+    padding-top: 10px;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: #343e52 transparent;
+}
+
+.modules-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modules-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modules-container::-webkit-scrollbar-thumb {
+    background: #343e52;
+    border-radius: 10px;
+}
+
+.modules-container::-webkit-scrollbar-thumb:hover {
+    background: #53627d;
 }
