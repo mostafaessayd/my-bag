@@ -1,0 +1,11 @@
+.logo-container {
+    height: 10%;
+    width: 100%;
+    background-color: brown;
+}
+
+.modules-container {
+    height: 90%;
+    width: 100%;
+    background-color: rgb(165, 140, 42);
+}
