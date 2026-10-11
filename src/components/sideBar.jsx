@@ -36,6 +36,7 @@ export default function SideBar() {
                 <Module
                     moduleName="BDA"
                     icon={<Database size={20} />}
+                    path={'/my-bag/BDA/'}
                 />
 
                 <Module

@@ -7,15 +7,6 @@ export default function BDA_Functions() {
             <Function functionName={"Fragmentation horizontale"}/>
             <Function functionName={"Fragmentation verticale"}/>
             <Function functionName={"Fragmentation mixte"}/>
-            <Function functionName={"Fragmentation horizontale"}/>
-            <Function functionName={"Fragmentation verticale"}/>
-            <Function functionName={"Fragmentation mixte"}/>
-            <Function functionName={"Fragmentation horizontale"}/>
-            <Function functionName={"Fragmentation verticale"}/>
-            <Function functionName={"Fragmentation mixte"}/>
-            <Function functionName={"Fragmentation horizontale"}/>
-            <Function functionName={"Fragmentation verticale"}/>
-            <Function functionName={"Fragmentation mixte"}/>
         </div>
     );
 }
