@@ -1,0 +1,50 @@
+/* .functions-page-container {
+    height: 100%;
+    width: 100%;
+    background-color: rebeccapurple;
+} */
+
+
+.functions-page-container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+    padding: 20px;
+
+    background:
+        radial-gradient(
+            ellipse at top left,
+            rgba(59, 130, 246, 0.06),
+            transparent 45%
+        ),
+        #0b0f19;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: #343e52 transparent;
+}
+
+.functions-page-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+.functions-page-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.functions-page-container::-webkit-scrollbar-thumb {
+    background: #343e52;
+    border-radius: 10px;
+}
+
+.functions-page-container::-webkit-scrollbar-thumb:hover {
+    background: #53627d;
+}

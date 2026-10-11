@@ -20,6 +20,7 @@
 import { useState } from 'react';
 import '../styles/layouts/mainLayout.css';
 import SideBar from '../components/sideBar';
+import BDA_Functions from '../modules pages/BDA/availableFunctionsPage';
 
 export default function MainLayout() {
 const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -47,7 +48,7 @@ return (
         </div>
 
         <div className="main-content-container">
-            {/* Main content */}
+            <BDA_Functions />
         </div>
 
     </div>
